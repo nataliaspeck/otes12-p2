@@ -4,7 +4,7 @@
 
 ![enunciado](enunciado.png)
 
-## Instruções de execução: aplicação cliente
+## Instruções de execução: [aplicação cliente](https://github.com/nataliaspeck/otes12-p2/tree/main/client)
 
 A aplicação cliente é o próprio sistema da Union Corporation que foi desenvolvido na prova 1 de OTES12 ([repositório do código prova 1](https://github.com/nataliaspeck/otes12-prova1)) porém, foram realizadas alterações para poder replicar a vulnerabilidade de exposição excessiva de dados. Agora, a aplição cliente da Union Corporation se comunicará via HTTP com um servidor criado para buscar os dados de funcionários como nome e região para realizar o cálculo das cotas (tudo isto está explicado mais detalhadamente no vídeo).
 
@@ -14,7 +14,7 @@ Ao entrar no diretório `/client` você pode executar o comando `./mvnw spring-b
 
 Obs: a aplicação cliente só funcionará corretamente caso o servidor esteja em execução também, pois necessita se comunicar com ele para buscar os dados dos funcionários da UnionCorporation.
 
-## Instruções de execução: aplicação servidor
+## Instruções de execução: [aplicação servidor](https://github.com/nataliaspeck/otes12-p2/tree/main/server)
 
 A aplicação servidor foi criada especialmente para a prova e é um servidor em Node.js que sobe no seu localhost na porta 8000, expondo uma API com um endpoint `/employee?userId={userId}` que pode ser consumida por meio de requisições HTTP, neste caso, pela aplicação cliente. Para executar, é necessário ter o Node.js instalado em sua máquina (https://nodejs.org/en/download/) [utilizei a versão v10.18.0] {a versão já deve incluir o gerenciador de pacote `npm` na instalação}.
 
@@ -27,3 +27,5 @@ node server.js
 ```
 
 A seguinte mensagem deve aparecer indicando que o servidor subiu com sucesso: `Server running at http://127.0.0.1:8000/employee`
+
+Mais informações sobre o desenvolvimento estão todas no vídeo :)
